@@ -23,6 +23,30 @@
   margin-left: auto;
 }
 
+.nav-link {
+  font-size: 1.1rem; /* Increase the font size of the menu items */
+  position: relative; /* Set the position property to relative to position the circle */
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  left: -2px; /* Position the circle to the left of the menu item */
+  top: 58%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.nav-item {
+  margin-right: 20px; /* Add spacing between menu items */
+}
+
+.nav-item:last-child {
+  margin-right: 0; /* Remove spacing for the last menu item */
+}
+
 
 /* Add these styles to your CSS file */
 .featured-image {
@@ -34,7 +58,6 @@
   overflow: hidden;
 }
 
-
 .image-description {
   position: absolute;
   bottom: 15px;
@@ -44,6 +67,7 @@
   padding: 10px;
   border-radius: 5px;
 }
+
 
 .image-description h4 {
   margin: 0;
@@ -56,3 +80,33 @@
   font-size: 14px;
 }
 
+.featured-image:hover {
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#navbarDropdownHome::before {
+  background-color: red; /* Change the color for the Gaming menu item */
+}
+
+#navbarDropdownPolitics::before {
+  background-color: blue; /* Change the color for the eSports menu item */
+}
+
+#navbarDropdownScience::before {
+  background-color: rgb(225, 207, 0); /* Change the color for the Entertainment menu item */
+}
+
+.image-container {
+  padding-right: 5px; /* Add spacing to the right of the images */
+}
+
+.image-container:last-child {
+  padding-right: 0; /* Remove spacing for the last image container */
+}
+
+@media (max-width: 767.98px) {
+  .image-container {
+    padding-right: 0; /* Remove spacing for mobile screens */
+  }
+}
