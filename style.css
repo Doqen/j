@@ -1,0 +1,53 @@
+.navbar {
+  min-height: 120px;
+  background-color: #343a40;
+}
+
+.navbar .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-bottom {
+  width: 100%;
+}
+
+/* Add these styles to your CSS file */
+.featured-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  min-height: 650px;
+  overflow: hidden;
+}
+
+
+.image-description {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.image-description h4 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.image-description p {
+  margin: 0;
+  font-size: 14px;
+}
+
