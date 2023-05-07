@@ -19,6 +19,11 @@
   width: 100%;
 }
 
+.hamburger-right {
+  margin-left: auto;
+}
+
+
 /* Add these styles to your CSS file */
 .featured-image {
   position: relative;
