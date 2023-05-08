@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journalism Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -74,41 +75,75 @@
                    </div>
                   </div>
                 </nav>
-  
+<div class="menu-container d-md-none"> <!-- Add 'd-md-none' class to hide menu on larger devices -->
+  <div class="menu-item">News</div>
+  <div class="menu-item">eSports</div>
+  <div class="logo-container">
+    <img src="lebron.png" alt="Your Logo" class="menu-logo" />
+  </div>
+  <div class="menu-item">Enter</div>
+  <div class="menu-item">More</div>
+</div>
+                
+
 <!-- Add this new section after the navbar in the HTML file -->
 <div class="container-fluid px-0">
   <div class="row g-0">
-      <div class="col-md-3 position-relative image-container">
-        <a href="article.html"><img src="lebron.png" class="img-fluid featured-image" alt="..."></a>
-          <div class="position-absolute bottom-0 end-0 bg-dark text-white p-2">
-              <h5>Image 1 Description</h5>
-          </div>
+    <div class="col-md-3 position-relative image-container">
+      <a href="asd"><img src="xqc.png" class="img-fluid featured-image" alt="..."></a>
+      <div class="image-gradient"></div>
+      <div class="position-absolute bottom-0 start-0 p-2">
+        <p class="tag" style="background-color: red;">Gaming</p>
+      </div>
+      <div class="position-absolute p-1" style="bottom: 0px; right: 5px;">
+        <p class="author">John Doe, <i>5 hours ago</i></p>
+      </div>
+      <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
+        <h5 class="text-white description-text">Xqc turns this into that asdsa ss sdasd ddd asdasd assss</h5>
+      </div>       
+    </div>
+    <div class="col-md-3 position-relative d-none d-md-block image-container">
+      <a href="asd"><img src="xqc.png" class="img-fluid featured-image" alt="..."></a>
+      <div class="image-gradient"></div>
+        <div class="position-absolute bottom-0 start-0 p-2">
+          <p class="tag" style="background-color: red;">Gaming</p>
+        </div>
+        <div class="position-absolute p-1" style="bottom: 0px; right: 5px;">
+          <p class="author">John Doe, <i>5 hours ago</i></p>
+        </div>
+        <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
+          <h5 class="text-white description-text">Xqc turns this into that asdsa ss sdasd ddd asdasd assss</h5>
+        </div>       
       </div>
       <div class="col-md-3 position-relative d-none d-md-block image-container">
         <a href="asd"><img src="xqc.png" class="img-fluid featured-image" alt="..."></a>
-          <div class="position-absolute bottom-0 end-0 bg-dark text-white p-2">
-              <h5>Image 2 Description</h5>
-          </div>
+        <div class="image-gradient"></div>
+        <div class="position-absolute bottom-0 start-0 p-2">
+          <p class="tag" style="background-color: red;">Gaming</p>
+        </div>
+        <div class="position-absolute p-1" style="bottom: 0px; right: 5px;">
+          <p class="author">John Doe, <i>5 hours ago</i></p>
+        </div>
+        <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
+          <h5 class="text-white description-text">Xqc turns this into that asdsa ss sdasd ddd asdasd assss</h5>
+        </div>       
       </div>
       <div class="col-md-3 position-relative d-none d-md-block image-container">
         <a href="asd"><img src="xqc.png" class="img-fluid featured-image" alt="..."></a>
-          <div class="position-absolute bottom-0 end-0 bg-dark text-white p-2">
-              <h5>Image 3 Description</h5>
-          </div>
-      </div>
-      <div class="col-md-3 position-relative d-none d-md-block image-container">
-        <a href="asd"><img src="xqc.png" class="img-fluid featured-image" alt="..."></a>
-          <div class="position-absolute bottom-0 end-0 bg-dark text-white p-2">
-              <h5>Image 4 Description</h5>
-          </div>
+        <div class="image-gradient"></div>
+        <div class="position-absolute bottom-0 start-0 p-2">
+          <p class="tag" style="background-color: red;">Gaming</p>
+        </div>
+        <div class="position-absolute p-1" style="bottom: 0px; right: 5px;">
+          <p class="author">John Doe, <i>5 hours ago</i></p>
+        </div>
+        <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
+          <h5 class="text-white description-text">Xqc turns this into that asdsa ss sdasd ddd asdasd assss</h5>
+        </div>       
       </div>
   </div>
 </div>
 
-  
-
-<!-- Main Content -->
-<!-- Main Content -->
 <div class="container mt-4">
     <h1 class="mb-4">Latest News</h1>
     <div class="row">
@@ -144,84 +179,6 @@
         </div>
     </div>
 </div>
-
-
-<!-- Featured Articles Section -->
-<!-- Featured Articles Section -->
-<div class="container mt-5">
-    <h2 class="mb-4">Featured Articles</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-3">
-                <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Revolutionizing Agriculture with Vertical Farming</h5>
-                    <p class="card-text">Vertical farming technology is transforming the agriculture industry, enabling sustainable, high-yield production in urban environments.</p>
-                    <p class="card-text"><small class="text-muted">Published on April 25, 2023</small></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-3">
-                <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">The Future of Space Travel: Exploring Mars</h5>
-                    <p class="card-text">With advancements in technology and international collaboration, the dream of humans exploring Mars is closer to becoming a reality.</p>
-                    <p class="card-text"><small class="text-muted">Published on April 20, 2023</small></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-3">
-                <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">The Impact of Electric Vehicles on the Auto Industry</h5>
-                    <p class="card-text">As electric vehicles become more popular, the auto industry faces significant changes, including shifting consumer preferences and the need for new infrastructure.</p>
-                    <p class="card-text"><small class="text-muted">Published on April 15, 2023</small></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Editor's Picks Section -->
-<div class="container mt-5">
-    <h2 class="mb-4">Editor's Picks</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-3">
-                <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Blockchain Technology: More Than Just Cryptocurrency</h5>
-                    <p class="card-text">Discover how blockchain technology is being utilized beyond cryptocurrency, with applications in various industries, such as healthcare and supply chain management.</p>
-                    <p class="card-text"><small class="text-muted">Published on April 10, 2023</small></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-3">
-                <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">The Growing Impact of Artificial Intelligence on Society</h5>
-    <p class="card-text">Artificial intelligence is transforming various aspects of society, from automating jobs to improving healthcare. Explore the potential benefits and challenges of AI integration.</p>
-    <p class="card-text"><small class="text-muted">Published on April 5, 2023</small></p>
-    </div>
-    </div>
-    </div>
-    <div class="col-md-4">
-    <div class="card mb-3">
-    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">The Rise of Remote Work: Adapting to a New Normal</h5>
-    <p class="card-text">Remote work has become increasingly popular due to advances in technology and the COVID-19 pandemic. Learn how businesses and employees are adapting to this new normal.</p>
-    <p class="card-text"><small class="text-muted">Published on March 30, 2023</small></p>
-    </div>
-    </div>
-    </div>
-    </div>
-
-</div>
-
 
 <!-- Footer -->
 <footer class="bg-light py-3 mt-4">
