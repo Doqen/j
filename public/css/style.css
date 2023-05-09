@@ -1,7 +1,7 @@
 .navbar {
   min-height: 120px;
   background-color: #343a40;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
 }
 
 .navbar .container {
@@ -269,9 +269,3 @@
   color: #6c757d;
 }
 
-
-@media (max-width: 767px) { 
-  .menu-container {
-    display: none;
-  }
-}
