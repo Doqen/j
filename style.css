@@ -269,3 +269,9 @@
   color: #6c757d;
 }
 
+
+@media (max-width: 767px) { 
+  .menu-container {
+    display: none;
+  }
+}
