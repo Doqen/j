@@ -7,13 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(14, 14, 14);">
     <div class="container">
       <div class="navbar-top">
-        <a class="navbar-brand" href="index.html">Journalism Website</a>
+        <a class="navbar-brand" href="index.html"><img src="xp.png" width="100px"></a>
       </div>
       <div class="navbar-bottom">
         <button class="navbar-toggler hamburger-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +61,7 @@
           <!-- Dropdown menu -->
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbarDropdownMore" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Contact
+              Contact
                 </a>
                 <div class="dropdown-menu horizontal-dropdown-menu" aria-labelledby="navbarDropdownMore">
                 <a class="dropdown-item" href="#">Business</a>
@@ -79,7 +81,7 @@
   <div class="menu-item">News</div>
   <div class="menu-item">eSports</div>
   <div class="logo-container">
-    <img src="lebron.png" alt="Your Logo" class="menu-logo" />
+    <img src="xp_phone.png" alt="Your Logo" class="menu-logo" />
   </div>
   <div class="menu-item">Enter</div>
   <div class="menu-item">More</div>
@@ -90,16 +92,16 @@
 <div class="container-fluid px-0">
   <div class="row g-0">
     <div class="col-md-3 position-relative image-container">
-      <a href="asd"><img src="xqc.png" class="img-fluid featured-image" alt="..."></a>
+      <a href="article_lebron.html"><img src="lebron.png" class="img-fluid featured-image" alt="..."></a>
       <div class="image-gradient"></div>
       <div class="position-absolute bottom-0 start-0 p-2">
         <p class="tag" style="background-color: red;">Gaming</p>
       </div>
       <div class="position-absolute p-1" style="bottom: 0px; right: 5px;">
-        <p class="author">John Doe, <i>5 hours ago</i></p>
+        <p class="author">John Doe, <i><span id="timeAgo1">5 hours ago</span></i></p>
       </div>
       <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
-        <h5 class="text-white description-text">Xqc turns this into that asdsa ss sdasd ddd asdasd assss</h5>
+        <h5 class="text-white description-text">LeBron James references Super Mario and Call of Duty in an uplifting speech after a Lakers victory.</h5>
       </div>       
     </div>
     <div class="col-md-3 position-relative d-none d-md-block image-container">
@@ -109,7 +111,7 @@
           <p class="tag" style="background-color: red;">Gaming</p>
         </div>
         <div class="position-absolute p-1" style="bottom: 0px; right: 5px;">
-          <p class="author">John Doe, <i>5 hours ago</i></p>
+          <p class="author">John Doe, <i><span id="timeAgo2">5 hours ago</span></i></p>
         </div>
         <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
           <h5 class="text-white description-text">Xqc turns this into that asdsa ss sdasd ddd asdasd assss</h5>
@@ -122,7 +124,7 @@
           <p class="tag" style="background-color: red;">Gaming</p>
         </div>
         <div class="position-absolute p-1" style="bottom: 0px; right: 5px;">
-          <p class="author">John Doe, <i>5 hours ago</i></p>
+          <p class="author">John Doe, <i><span id="timeAgo3">5 hours ago</span></i></p>
         </div>
         <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
           <h5 class="text-white description-text">Xqc turns this into that asdsa ss sdasd ddd asdasd assss</h5>
@@ -135,7 +137,7 @@
           <p class="tag" style="background-color: red;">Gaming</p>
         </div>
         <div class="position-absolute p-1" style="bottom: 0px; right: 5px;">
-          <p class="author">John Doe, <i>5 hours ago</i></p>
+          <p class="author">John Doe, <i><span id="timeAgo4">5 hours ago</span></i></p>
         </div>
         <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
           <h5 class="text-white description-text">Xqc turns this into that asdsa ss sdasd ddd asdasd assss</h5>
@@ -198,5 +200,6 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

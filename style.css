@@ -1,6 +1,7 @@
 .navbar {
   min-height: 120px;
   background-color: #343a40;
+  border-bottom: 1px solid #ffffff;
 }
 
 .navbar .container {
@@ -26,6 +27,7 @@
 .nav-link {
   font-size: 1.1rem; /* Increase the font size of the menu items */
   position: relative; /* Set the position property to relative to position the circle */
+  color: white!important;
 }
 
 .nav-link::before {
@@ -208,9 +210,9 @@
 .logo-container {
   position: relative;
   bottom: 30px; /* Change this value */
-  width: 60px;
-  height: 60px;
-  background-color: #333;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(14, 14, 14);
   border-radius: 50%;
   z-index: 1001;
   display: flex;
@@ -223,8 +225,8 @@
 
 .menu-logo {
   position: absolute;
-  width: 50px; /* Adjust width based on logo size */
-  height: 50px; /* Adjust height based on logo size */
+  width: 95px; /* Adjust width based on logo size */
+  height: 95px; /* Adjust height based on logo size */
   border-radius: 50%; /* Make the logo circular */
   object-fit: cover; /* Preserve aspect ratio */
 }
@@ -234,7 +236,7 @@
   justify-content: space-around;
   align-items: center; /* Center the menu items vertically */
   height: 60px; /* Add a fixed height for the menu container */
-  background-color: #333;
+  background-color: rgb(14, 14, 14);
 }
 
 /* Add these new styles to your CSS file */
@@ -249,3 +251,21 @@
     display: none;
   }
 }
+
+.breadcrumb-container {
+  font-size: 0.9rem;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
