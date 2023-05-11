@@ -1,3 +1,5 @@
+
+
 .navbar {
   min-height: 120px;
   background-color: #343a40;
@@ -18,10 +20,6 @@
 
 .navbar-bottom {
   width: 100%;
-}
-
-.hamburger-right {
-  margin-left: auto;
 }
 
 .nav-link {
@@ -49,8 +47,6 @@
   margin-right: 0; /* Remove spacing for the last menu item */
 }
 
-
-/* Add these styles to your CSS file */
 .featured-image {
   position: relative;
   display: block;
@@ -69,7 +65,6 @@
   padding: 10px;
   border-radius: 5px;
 }
-
 
 .image-description h4 {
   margin: 0;
@@ -96,11 +91,16 @@
 }
 
 #navbarDropdownScience::before {
-  background-color: rgb(225, 207, 0); /* Change the color for the Entertainment menu item */
+  background-color: rgb(11, 156, 6); /* Change the color for the Entertainment menu item */
 }
 
 .image-container {
   padding-right: 5px; /* Add spacing to the right of the images */
+}
+
+.image-container2 {
+  padding-right: 5px; /* Add spacing to the right of the images */
+  position: relative;
 }
 
 .image-container:last-child {
@@ -111,15 +111,151 @@
   .image-container {
     padding-right: 0; /* Remove spacing for mobile screens */
   }
+  .art2,
+  .art3,
+  .art4 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-right: 0;
+  }
+
+  .art2 img,
+  .art3 img,
+  .art4 img {
+    min-height: unset;
+    height: 150px;
+  }
+
+  .art2 .tag,
+  .art3 .tag,
+  .art4 .tag {
+    font-size: 14px;
+    padding: 5px;
+    display: block;
+    margin: 5px 0;
+  }
+
+  .art2 .description-text,
+  .art3 .description-text,
+  .art4 .description-text {
+    font-size: 16px;
+  }
+
+  .art2 .author,
+  .art3 .author,
+  .art4 .author {
+    font-size: 12px;
+  }
+
+  .art2 .description-container,
+  .art3 .description-container,
+  .art4 .description-container {
+    bottom: unset;
+    right: unset;
+    left: unset;
+    padding-left: unset;
+    padding-right: unset;
+    margin-top: 5px;
+  }
+  .navbar-top {
+    display: flex;
+    justify-content: center;
+}
 }
 
+
+/* For the smallest screen size (mobile) */
+@media (max-width: 575px) {
+  .row.g-0 {
+    flex-direction: column;
+  }
+
+  .art2,
+  .art3,
+  .art4 {
+    flex-direction: row;
+    padding: 10px 0;
+    margin-left: 10px;
+  }
+
+  .art2 img,
+  .art3 img,
+  .art4 img {
+    height: 150px;
+    width: 200px;
+  }
+
+  .art2 .description-container,
+  .art3 .description-container,
+  .art4 .description-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+  }
+  .art2 .image-gradient,
+  .art3 .image-gradient,
+  .art4 .image-gradient {
+    display: none;
+  }
+
+  .art2 .author,
+  .art3 .author,
+  .art4 .author {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* .art2 .tag,
+  .art3 .tag,
+  .art4 .tag {
+    margin-left: 200px;
+    margin-bottom: 159px;
+  } */
+}
+
+
 /* Add these new styles to your CSS file */
+.tag-color-entertainment {
+  background-color: rgb(11, 156, 6);
+}
+
+.tag-color-gaming {
+  background-color: red;
+}
+
+.tag-color-esports {
+  background-color: blue;
+}
+
+.tag-color-default {
+  background-color: purple;
+}
+
 .tag {
   display: inline-block;
-  color: #fff;
   padding: 2px 5px;
-  border-radius: 3px;
-  cursor: pointer;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.tag_2 {
+  display: inline-block;
+  padding: 2px 5px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 2px;
 }
 
 .author {
@@ -202,7 +338,6 @@
   line-height: 40px; /* Add this line to vertically center the text */
 }
 
-
 .menu-item:hover {
   background-color: #444;
 }
@@ -219,9 +354,6 @@
   justify-content: center;
   align-items: center;
 }
-
-
-
 
 .menu-logo {
   position: absolute;
@@ -269,3 +401,83 @@
   color: #6c757d;
 }
 
+.tag2 {
+  position: absolute;
+  top: 200px;
+  left: 20px; 
+}
+
+a:link { 
+  text-decoration: none;
+  color: white;
+  
+ }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+.red-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.green-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(11, 156, 6);
+  border-radius: 50%;
+}
+
+.blue-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.small-article {
+  display: flex;
+}
+
+.card-img {
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+
+.card-tag {
+  display: block;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.card-author {
+  font-size: .875rem;
+  margin-bottom: 0;
+}
+
+.card-date {
+  font-size: .875rem;
+  color: #6c757d;
+}
