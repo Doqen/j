@@ -17,36 +17,30 @@ fetch('articles.json')
     const limitedRestArticles = restArticles.slice(0, 3);
   
     const latestArticleHTML = `
-      <div class="col-12 mb-4">
-        <div class="card">
-          <img src="${latestArticle.image_frontpage}" class="card-img-top" alt="${latestArticle.title}">
-          <div class="card-body">
-            <h5 class="card-title">${latestArticle.title}</h5>
-            <p class="card-text">${latestArticle.content_index}</p>
-            <a href="${latestArticle.html_name}" class="btn btn-danger">Read more</a>
-          </div>
-        </div>
+    <div class="col-12 mb-4">
+    <div class="card card-a">
+    <a href="${latestArticle.html_name}"><img src="${latestArticle.image_frontpage}" class="card-img-top card-img-a" alt="${latestArticle.title}"></a>
+      <div class="card-body">
+      <a href="${latestArticle.html_name}"><h5 class="card-title">${latestArticle.title}</h5></a>
+        <p class="card-text">${latestArticle.content_index}</p>
+        <a href="${latestArticle.html_name}" class="btn btn-danger">Read more</a>
       </div>
-    `;
-  
-    gamingSection.innerHTML += latestArticleHTML;
-  
-    limitedRestArticles.forEach(article => {
-      const articleHTML = `
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-sm-6">
-              <img src="${article.image_frontpage}" class="card-img" alt="${article.title}"">
-            </div>
-            <div class="col-sm-6">
-              <div class="card-body">
-                <h5 class="card-title">${article.title}</h5>
-                <p class="card-text">${article.content_index}</p>
-                <p class="card-text"><small class="text-muted">${article.date}</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div>
+  </div>
+`;
+
+gamingSection.innerHTML += latestArticleHTML;
+
+limitedRestArticles.forEach(article => {
+  const articleHTML = `
+  <div class="col-md-4 mb-4">
+  <div class="card card_mob">
+  <a href="${article.html_name}"><img src="${article.image_frontpage}" class="card-img-top card-img-b" alt="${article.title}" style="object-fit: cover; object-position: center; height: 100%;"></a>
+    <div class="card-body">
+    <a href="${article.html_name}"><h5 class="card-title">${article.title}</h5></a>
+    <p class="card-text"><small class="text-muted">${article.date}</p>
+    </div>
+  </div>
     `;
       gamingSection.innerHTML += articleHTML;
     });

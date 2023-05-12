@@ -38,7 +38,7 @@ function timeDifference(current, previous) {
 fetch('articles.json')
   .then(response => response.json())
   .then(articles => {
-    const container = document.querySelector('.container .card-group');
+    const container = document.querySelector('.container .row');
     const now = new Date();
     const windowWidth = window.innerWidth;
     let numberOfArticles;
@@ -59,15 +59,17 @@ fetch('articles.json')
       const timeAgo = timeDifference(now, new Date(article.date));
       const articleHtml = `
 
-          <div class="card">
-            <img src="${article.image_frontpage}" class="card-img-top" alt="...">
+          <div class="card col-md-4 mb-4">
+            <a href="${article.html_name}"><img class="card-img-top position-relative card-img-b" src="${article.image_frontpage}" alt="${article.title}"></a>
+              <div class="p-2 tag3">
+                <a href="${article.tag_link} "><p class="tag ${getTagColorClass(article.tag)}">${article.tag}</p></a>
+              </div>
             <div class="card-body">
-              <h5 class="card-title">${article.title}</h5>
+            <a href="${article.html_name}"><h5 class="card-title">${article.title}</h5></a>
               <p class="card-text">${article.content_index.slice(0, 100)}</p>
               <p class="card-text"><small class="text-muted">${timeAgo}</small></p>
             </div>
           </div>
-          
       `;
 
       container.innerHTML += articleHtml;

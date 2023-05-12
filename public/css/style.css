@@ -1,5 +1,9 @@
 
 
+body {
+  overflow-x: hidden;
+}
+
 .navbar {
   min-height: 120px;
   background-color: #343a40;
@@ -165,10 +169,24 @@
 }
 
 
+
 /* For the smallest screen size (mobile) */
 @media (max-width: 575px) {
   .row.g-0 {
     flex-direction: column;
+  }
+
+  .top-bg {
+    background-color: rgb(33, 33, 33);
+  }
+
+  .card.card_mob {
+    height: 300px; /* adjust this value as per your need */
+    flex-direction: row;
+  }
+    
+  .card-img-b {
+    width: 100%;
   }
 
   .art2,
@@ -294,7 +312,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%);
   pointer-events: none;
 }
 
@@ -331,41 +349,18 @@
 .menu-item {
   flex: 1;
   text-align: center;
-  padding: 10px;
   color: #fff;
   font-size: 18px;
   cursor: pointer;
-  line-height: 40px; /* Add this line to vertically center the text */
 }
 
 .menu-item:hover {
   background-color: #444;
 }
 
-.logo-container {
-  position: relative;
-  bottom: 30px; /* Change this value */
-  width: 70px;
-  height: 70px;
-  background-color: rgb(14, 14, 14);
-  border-radius: 50%;
-  z-index: 1001;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu-logo {
-  position: absolute;
-  width: 95px; /* Adjust width based on logo size */
-  height: 95px; /* Adjust height based on logo size */
-  border-radius: 50%; /* Make the logo circular */
-  object-fit: cover; /* Preserve aspect ratio */
-}
 
 .menu-container {
   display: flex;
-  justify-content: space-around;
   align-items: center; /* Center the menu items vertically */
   height: 60px; /* Add a fixed height for the menu container */
   background-color: rgb(14, 14, 14);
@@ -376,12 +371,21 @@
   .menu-container {
     display: none;
   }
+
+}
+
+@media (min-width: 768px) { /* Hide the menu-container on larger devices */
+  .card-img-b {
+    min-height: 300px;
+  }
+
 }
 
 @media (max-width: 991.98px) {
   .hamburger-right {
     display: none;
   }
+
 }
 
 .breadcrumb-container {
@@ -409,18 +413,17 @@
 
 a:link { 
   text-decoration: none;
-  color: white;
-  
+  color: rgb(51, 54, 55);
  }
 
 
-a:visited { text-decoration: none; }
+a:visited { 
+  color: rgb(51, 54, 55); 
+}
 
 
 a:hover { text-decoration: none; }
 
-
-a:active { text-decoration: none; }
 
 .red-circle {
   display: inline-block;
@@ -450,11 +453,11 @@ a:active { text-decoration: none; }
   display: flex;
 }
 
-.card-img {
+/* .card-img {
   max-height: 100%;
   object-fit: cover;
-}
-
+} */
+/* 
 .card-body {
   display: flex;
   flex-direction: column;
@@ -480,4 +483,9 @@ a:active { text-decoration: none; }
 .card-date {
   font-size: .875rem;
   color: #6c757d;
+} */
+
+.tag3 {
+ position: absolute;
+ top: 50px;
 }
