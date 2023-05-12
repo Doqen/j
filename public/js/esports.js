@@ -38,7 +38,9 @@ limitedRestArticles.forEach(article => {
   <a href="${article.html_name}"><img src="${article.image_frontpage}" class="card-img-top card-img-b" alt="${article.title}" style="object-fit: cover; object-position: center; height: 100%;"></a>
     <div class="card-body">
     <a href="${article.html_name}"><h5 class="card-title">${article.title}</h5></a>
-    <p class="card-text"><small class="text-muted">${article.date}</p>
+    <div class="article-date" data-timestamp="${article.date}">
+    <span></span>
+  </div>
     </div>
   </div>
       `;

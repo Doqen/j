@@ -67,7 +67,9 @@ fetch('articles.json')
             <div class="card-body">
             <a href="${article.html_name}"><h5 class="card-title">${article.title}</h5></a>
               <p class="card-text">${article.content_index.slice(0, 100)}</p>
-              <p class="card-text"><small class="text-muted">${timeAgo}</small></p>
+              <div class="article-date" data-timestamp="${article.date}">
+              <span></span>
+            </div>
             </div>
           </div>
       `;

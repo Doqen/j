@@ -51,6 +51,26 @@ body {
   margin-right: 0; /* Remove spacing for the last menu item */
 }
 
+.mobile-nav {
+  background: #0d0d0d;
+  position: fixed;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bloc-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc-icon img {
+  width: 30px;
+}
+
 .featured-image {
   position: relative;
   display: block;
@@ -194,7 +214,6 @@ body {
   .art4 {
     flex-direction: row;
     padding: 10px 0;
-    margin-left: 10px;
   }
 
   .art2 img,
@@ -334,28 +353,66 @@ body {
 
 .menu-container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px;
-  background-color: #333;
+  height: 40px;
+  background-color: rgb(14, 14, 14);
   z-index: 1000;
-  padding-top: 20px; /* Add this line to create space for the logo */
 }
 
 .menu-item {
-  flex: 1;
+  flex: 1.2;
   text-align: center;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 60px;
+  padding-top: 15px;
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  background: rgb(14, 14, 14);
+  color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  z-index: 1001;
+}
+
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu li {
+  padding: 10px;
   cursor: pointer;
 }
 
+.dropdown-menu li:hover {
+  background-color: #db2222;
+}
+
+.menu-item:hover .dropdown-menu {
+  display: block;
+}
+
+.menu-item:last-child {
+  flex: 0.8; /* Make the last item 40% smaller */
+}
+
 .menu-item:hover {
-  background-color: #444;
+  background-color: #db2222;
 }
 
 
@@ -363,7 +420,29 @@ body {
   display: flex;
   align-items: center; /* Center the menu items vertically */
   height: 60px; /* Add a fixed height for the menu container */
-  background-color: rgb(14, 14, 14);
+
+}
+
+.search-input {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 150%;
+  z-index: 1001;
+}
+
+.search-input input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  background: rgb(14, 14, 14);
+  border: none;
+}
+
+.menu-item:hover .search-input {
+  display: block;
 }
 
 /* Add these new styles to your CSS file */
@@ -372,12 +451,13 @@ body {
     display: none;
   }
 
-}
-
-@media (min-width: 768px) { /* Hide the menu-container on larger devices */
   .card-img-b {
     min-height: 300px;
   }
+
+  .mobile-nav {
+    display: none;
+    }
 
 }
 
@@ -393,8 +473,7 @@ body {
 }
 
 .breadcrumb-item a {
-  text-decoration: none;
-  color: #007bff;
+  color: #007bff!important;
 }
 
 .breadcrumb-item a:hover {
@@ -413,12 +492,20 @@ body {
 
 a:link { 
   text-decoration: none;
-  color: rgb(51, 54, 55);
+  color: rgb(55, 55, 51);
  }
 
+.menu-item > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.menu3 {
+  width: 50px;
+}
 
 a:visited { 
-  color: rgb(51, 54, 55); 
+  text-decoration: none;
 }
 
 
@@ -445,6 +532,30 @@ a:hover { text-decoration: none; }
   display: inline-block;
   width: 10px;
   height: 10px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.red-circle_mobile {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.green-circle_mobile {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: rgb(11, 156, 6);
+  border-radius: 50%;
+}
+
+.blue-circle_mobile {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
   background-color: blue;
   border-radius: 50%;
 }
