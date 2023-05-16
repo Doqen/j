@@ -3,6 +3,8 @@
 <head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVS5EE2WZ8"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5957446475943274"
+     crossorigin="anonymous"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -11,20 +13,19 @@
   gtag('config', 'G-CVS5EE2WZ8');
 
 </script>
+    <link rel="icon" href="favi.png" type="image/png" sizes="40x40">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journalism Website</title>
+    <title>Endgame News</title>
 
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/script.js"></script>
+
 
 
 </head>
@@ -33,8 +34,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(14, 14, 14);">
     <div class="container">
       <div class="navbar-top">
-        <a class="navbar-brand d-none d-sm-block" href="index.html"><img src="assets/logo/XP.png" width="130px"></a>
-        <a class="navbar-brand d-block d-sm-none" href="index.html"><img src="assets/logo/XP.png" width="90px"></a>        
+        <a class="navbar-brand d-none d-sm-block" href="/"><img src="assets/logo/xp.png" width="240px"></a>
+        <a class="navbar-brand d-block d-sm-none" href="/"><img src="assets/logo/xp.png" width="200px"></a>        
       </div>
       <div class="navbar-bottom">
         <button class="navbar-toggler hamburger-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,69 +43,37 @@
         </button>      
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Gaming
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="articles/gaming.html">Gaming</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdownPolitics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              eSports
-            </a>
-            <div class="dropdown-menu horizontal-dropdown-menu" aria-labelledby="navbarDropdownPolitics">
-              <a class="dropdown-item" href="#">Elections</a>
-              <a class="dropdown-item" href="#">Government</a>
-              <a class="dropdown-item" href="#">International Relations</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="articles/esports.html">eSports</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdownScience" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Entertainment
-            </a>
-            <div class="dropdown-menu horizontal-dropdown-menu" aria-labelledby="navbarDropdownScience">
-              <a class="dropdown-item" href="#">Environment</a>
-              <a class="dropdown-item" href="#">Space</a>
-              <a class="dropdown-item" href="#">Research</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="articles/entertainment.html">Entertainment</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdownTechnology" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About Us
-            </a>
-            <div class="dropdown-menu horizontal-dropdown-menu" aria-labelledby="navbarDropdownTechnology">
-              <a class="dropdown-item" href="#">Gadgets</a>
-              <a class="dropdown-item" href="#">Internet</a>
-              <a class="dropdown-item" href="#">Artificial Intelligence</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
           </li>
           <!-- Dropdown menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdownMore" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Contact
-                </a>
-                <div class="dropdown-menu horizontal-dropdown-menu" aria-labelledby="navbarDropdownMore">
-                <a class="dropdown-item" href="#">Business</a>
-                <a class="dropdown-item" href="#">Health</a>
-                <a class="dropdown-item" href="#">Entertainment</a>
-                <hr class="d-block my-1 mx-auto w-75">
-                <a class="dropdown-item" href="#">Opinion</a>
-                <a class="dropdown-item" href="#">Lifestyle</a>
-                </div>
-                </li>
-                </ul>
-                </div>
-                   </div>
-                  </div>
-                </nav>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
     <div class="menu-container d-md-none"> 
-      <div class="menu-item"><a href="index.html"><i class="bi bi-house-door-fill"> Home</i></a></div>
+      <div class="menu-item"><a href="/"><i class="bi bi-house-door-fill"> Home</i></a></div>
       <div class="menu-item">
         <i class="bi bi-newspaper"></i> News
         <ul class="dropdown-menu">
-          <li>More</li>
-          <li><span class="green-circle_mobile"></span> Entertainment</li>
-          <li><span class="blue-circle_mobile"></span> Esports</li>
-          <li><span class="red-circle_mobile"></span> Gaming</li>
+          <a href="articles/other.html"><li>More</li></a>
+          <a href="articles/entertainment.html"><li><span class="green-circle_mobile"></span> Entertainment</li></a>
+          <a href="articles/esports.html"><li><span class="blue-circle_mobile"></span> Esports</li></a>
+          <a href="articles/gaming.html"><li><span class="red-circle_mobile"></span> Gaming</li></a>
         </ul>
       </div>
       <div class="menu-item">
@@ -116,73 +85,23 @@
       <div class="menu-item menu3">
         <i class="bi bi-three-dots"></i>
         <ul class="dropdown-menu dropdown-menu-right">
-          <li>Privacy Policy</li>
-          <li>Terms Of Service</li>
-          <li>Advertise with us</li>
-          <li>Contact</li>
-          <li>About</li>
+          <a href="privacy.html"><li>Privacy Policy</li></a>
+          <a href="termsofservice.html"><li>Terms Of Service</li></a>
+          <a href="advertise.html"><li>Advertise with us</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+          <a href="about.html"><li>About</li></a>
         </ul>
       </div>
     </div>      
 
 <!-- Add this new section after the navbar in the HTML file -->
 <div class="container-fluid px-0 top-bg">
-  <div class="row g-0">
-    <div class="col-md-3 cold-sm-12 position-relative image-container">
-      <a href="article_lebron.html"><img src="assets/lebron.png" class="img-fluid featured-image" alt="..."></a>
-      <div class="image-gradient"></div>
-      <div class="position-absolute bottom-0 start-0 p-2">
-        <a href="articles/gaming"><p class="tag" style="background-color: red;">Gaming</p></a>
-      </div>
-      <div class="position-absolute p-1" style="bottom: 0px; right: 0px;">
-        <p class="author">John Doe, <i><span id="timeAgo1">5 hours ago</span></i></p>
-      </div>
-      <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
-        <a href="xqc.html" class="feat"><h5 class="text-white description-text"><b>LeBron James references Super Mario and Call of Duty in an uplifting speech after a Lakers victory.</b></h5></a>
-      </div>       
-    </div>
-    <div class="col-md-3 col-sm-4 position-relative image-container art2">
-      <a href="asd"><img src="assets/xqc.png" class="img-fluid featured-image" alt="..."></a>
-      <div class="image-gradient"></div>
-        <div class="position-absolute bottom-0 start-0 p-2">
-          <a href="articles/gaming"><p class="tag" style="background-color: red;">Gaming</p></a>
-        </div>
-        <div class="position-absolute p-1" style="bottom: 0px; right: 5px;">
-          <p class="author">John Doe, <i><span id="timeAgo2">5 hours ago</span></i></p>
-        </div>
-        <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
-          <a href="xqc.html" class="feat"><h5 class="text-white description-text"><b>Xqc turns this into that asdsa ss sdasd ddd asdasd assss</b></h5></a>
-        </div>       
-      </div>
-      <div class="col-md-3 col-sm-4 position-relative image-container art3">
-        <a href="asd"><img src="assets/xqc.png" class="img-fluid featured-image" alt="..."></a>
-        <div class="image-gradient"></div>
-        <div class="position-absolute bottom-0 start-0 p-2">
-          <a href="articles/gaming"><p class="tag" style="background-color: red;">Gaming</p></a>
-        </div>
-        <div class="position-absolute p-1" style="bottom: 0px; right: 5px;">
-          <p class="author">John Doe, <i><span id="timeAgo3">5 hours ago</span></i></p>
-        </div>
-        <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
-          <a href="xqc.html" class="feat"><h5 class="text-white description-text"><b>Xqc turns this into that asdsa ss sdasd ddd asdasd assss</b></h5></a>
-        </div>       
-      </div>
-      <div class="col-md-3 col-sm-4 position-relative image-container art4">
-        <a href="asd"><img src="assets/xqc.png" class="img-fluid featured-image" alt="..."></a>
-        <div class="image-gradient"></div>
-        <div class="position-absolute bottom-0 start-0 p-2">
-          <a href="articles/gaming"><p class="tag" style="background-color: red;">Gaming</p></a>
-        </div>
-        <div class="position-absolute p-1" style="bottom: 0px; right: 5px;">
-          <p class="author">John Doe, <i><span id="timeAgo4">5 hours ago</span></i></p>
-        </div>
-        <div class="position-absolute description-container" style="bottom: 70px; right: 0; left: 0; padding-left: 20px; padding-right: 20px;">
-          <a href="xqc.html" class="feat"><h5 class="text-white description-text"><b>Xqc turns this into that asdsa ss sdasd ddd asdasd assss</b></h5></a>
-        </div>       
-      </div>
+  <div class="row g-0" id="featured-articles">
+    <!-- Featured articles-->
   </div>
 </div>
-    <div class="container text-center">
+
+    <div class="container text-left mt-5">
       <h1 class="mb-4 mt-4">Latest News</h1>
         <div class="row">
         </div>  
@@ -193,14 +112,15 @@
 <div class="container"></div>
 <div class="bg-dark text-white text-center mt-4" style="height: 50px;">
 </div>
-
+<br>
 <!-- GAMING -->
-<div class="container text-center">
+<div class="container">
   <div id="gamingSection" class="row mt-3">
-    <h1>
+    <h1 class="mb-3 ml-4">
       <span class="red-circle"></span>
       Gaming
     </h1>
+    <br>
       <!-- Gaming articles will be added here -->
   </div>
 </div>
@@ -213,7 +133,7 @@
 <!-- ENTERTAINMENT -->
 <div class="container text-center">
   <div id="entertainmentSection" class="row mt-3">
-    <h1>
+    <h1 class="mb-3">
       <span class="green-circle"></span>
       Entertainment
     </h1>
@@ -229,24 +149,26 @@
 <!-- eSports -->
 <div class="container text-center">
   <div id="esportsSection" class="row mt-3">
-    <h1>
+    <h1 class="mb-3">
       <span class="blue-circle"></span>
-      eSports
+      Esports
     </h1>
       <!-- Gaming articles will be added here -->
   </div>
 </div>
-
+<br>
+<br>
+<br>
 <!-- Footer -->
 <footer class="bg-light py-3 mt-4">
     <div class="container">
         <div class="row">
 <div class="col-md-6">
-<p class="mb-0">© 2023 Grinding XP. All rights reserved.</p>
+  <p class="mb-0">© 2023 Endgame News. All rights reserved.</p>
 </div>
 <div class="col-md-6 text-md-right">
-<a href="#" class="text-dark">Terms of Use</a> |
-<a href="#" class="text-dark">Privacy Policy</a>
+<a href="termsofservice.html" class="text-dark">Terms of Service</a> |
+<a href="privacy.html" class="text-dark">Privacy Policy</a>
 </div>
 </div>
 </div>
@@ -255,14 +177,8 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/main.js"></script>
 <script src="js/loadArticles.js"></script>
-<script src="js/generateArticles.js"></script>
-<script src="articles/time.js"></script>
-<script src="js/gaming.js"></script>
-<script src="js/entertainment.js"></script>
-<script src="js/esports.js"></script>
+<script src="js/front_articles.js"></script>
 
 </body>
 </html>

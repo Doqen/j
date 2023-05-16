@@ -1,7 +1,10 @@
 
 
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,600;0,900;1,700&display=swap');
+
 body {
   overflow-x: hidden;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .navbar {
@@ -50,6 +53,18 @@ body {
 .nav-item:last-child {
   margin-right: 0; /* Remove spacing for the last menu item */
 }
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* .nav-item a {
+  color: white!important;
+  text-decoration: none!important;
+} */
 
 .mobile-nav {
   background: #0d0d0d;
@@ -104,18 +119,6 @@ body {
 .featured-image:hover {
   opacity: 0.9;
   transition: opacity 0.2s ease-in-out;
-}
-
-#navbarDropdownHome::before {
-  background-color: red; /* Change the color for the Gaming menu item */
-}
-
-#navbarDropdownPolitics::before {
-  background-color: blue; /* Change the color for the eSports menu item */
-}
-
-#navbarDropdownScience::before {
-  background-color: rgb(11, 156, 6); /* Change the color for the Entertainment menu item */
 }
 
 .image-container {
@@ -188,7 +191,24 @@ body {
 }
 }
 
+#featured1 a {
+  color: white;
+}
 
+.art2 a,
+.art3 a,
+.art4 a {
+  color: white;
+}
+
+.image-articles-front {
+  height: 500px;
+  object-fit: cover;
+}
+
+.front-title {
+  font-size: 50px;
+}
 
 /* For the smallest screen size (mobile) */
 @media (max-width: 575px) {
@@ -196,17 +216,16 @@ body {
     flex-direction: column;
   }
 
-  .top-bg {
-    background-color: rgb(33, 33, 33);
+  #featured1 {
+    border-bottom: 4px solid white;
   }
 
-  .card.card_mob {
-    height: 300px; /* adjust this value as per your need */
-    flex-direction: row;
+  #featured1 a {
+    color: white;
   }
-    
-  .card-img-b {
-    width: 100%;
+
+  .top-bg {
+    background-color: rgb(33, 33, 33);
   }
 
   .art2,
@@ -215,6 +234,8 @@ body {
     flex-direction: row;
     padding: 10px 0;
   }
+
+
 
   .art2 img,
   .art3 img,
@@ -229,7 +250,7 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end; /* Change this line */
     margin-left: 200px;
   }
   .art2 .image-gradient,
@@ -245,13 +266,21 @@ body {
     margin-bottom: 10px;
   }
 
-  /* .art2 .tag,
-  .art3 .tag,
-  .art4 .tag {
-    margin-left: 200px;
-    margin-bottom: 159px;
-  } */
+  footer {
+    display: none;
+  }
+
+  .image-articles-front {
+    height: 220px;
+  }
+
+  .front-title {
+    font-size: 30px;
+  }
+
 }
+
+
 
 
 /* Add these new styles to your CSS file */
@@ -397,6 +426,7 @@ body {
 .dropdown-menu li {
   padding: 10px;
   cursor: pointer;
+  color: white;
 }
 
 .dropdown-menu li:hover {
@@ -452,7 +482,9 @@ body {
   }
 
   .card-img-b {
-    min-height: 300px;
+    width: 100%;
+    height: 220px; /* Adjust this height value as needed */
+    object-fit: cover;
   }
 
   .mobile-nav {
@@ -490,10 +522,7 @@ body {
   left: 20px; 
 }
 
-a:link { 
-  text-decoration: none;
-  color: rgb(55, 55, 51);
- }
+
 
 .menu-item > a {
   text-decoration: none;
@@ -504,12 +533,6 @@ a:link {
   width: 50px;
 }
 
-a:visited { 
-  text-decoration: none;
-}
-
-
-a:hover { text-decoration: none; }
 
 
 .red-circle {
@@ -564,39 +587,33 @@ a:hover { text-decoration: none; }
   display: flex;
 }
 
-/* .card-img {
-  max-height: 100%;
-  object-fit: cover;
-} */
-/* 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 15px;
+.card {
+  border: none;
 }
 
-.card-tag {
-  display: block;
-  font-weight: bold;
-  margin-bottom: .5rem;
+.img-fluid {
+  position: relative;
 }
-
-.card-title {
-  margin-bottom: 0;
-}
-
-.card-author {
-  font-size: .875rem;
-  margin-bottom: 0;
-}
-
-.card-date {
-  font-size: .875rem;
-  color: #6c757d;
-} */
 
 .tag3 {
- position: absolute;
- top: 50px;
+  position: absolute;
+}
+
+.card-body a{
+  font-size: 20px!important;
+  color: rgb(21, 21, 21)
+}
+
+.article-img {
+  width: 100%;
+  height: 220px; /* Adjust this height value as needed */
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
